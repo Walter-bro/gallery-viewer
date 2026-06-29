@@ -1,0 +1,21 @@
+appname=gallery-viewer
+version=1.0.2
+display_name=画廊浏览器
+desc=<b>本地画廊浏览器</b>，仿照 EhViewer 设计，支持<b>上下滚动阅读</b>、标签筛选、收藏管理。基于 Python + Flask 后端 + Vue 3 前端，<b>完全本地化</b>，无需联网。<br/><br/>🌟 <b>核心特性</b>：<br/>• 网格 / 列表双视图浏览<br/>• Webtoon 式<b>连续上下滚动阅读</b>（仿 EhViewer 阅读模式）<br/>• 标签云 + 关键字 + 高级筛选搜索<br/>• 一键收藏 + 自定义标签分类<br/>• 阅读进度自动保存<br/>• 缩略图缓存与渐进式加载<br/><br/>📁 <b>使用方法</b>：将图片文件夹扫描为画廊，支持 JPG/PNG/WebP/GIF 等格式。
+arch=all
+platform=all
+source=thirdparty
+maintainer=Mavis
+maintainer_url=https://github.com/mavis
+distributor=Mavis
+distributor_url=https://github.com/mavis
+os_min_version=0.9.0
+os_max_version=9.9.9
+desktop_uidir=ui
+desktop_applaunchname=gallery-viewer.main
+service_port=8899
+checkport=true
+install_dep_apps=python312
+changelog=1.0.0: 首个正式版本，实现画廊浏览、Webtoon 滚动阅读、搜索筛选、收藏标签四大核心功能。
+         1.0.1: 封面动图改静态展示避免视觉干扰；列表模式显示画廊名称与标签。
+         1.0.2: 递归扫描子文件夹，引入"分类"（category）概念；修复设置 dialog 被遮挡导致卡死的 Bug。
